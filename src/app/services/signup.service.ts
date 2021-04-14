@@ -7,7 +7,8 @@ import { Signup } from '../model/signup';
   providedIn: 'root'
 })
 export class SignupService {
-  private baseUrl = "http://localhost:8080";
+  //private baseUrl = "http://localhost:8080";
+  private baseUrl = "https://medworld.herokuapp.com";
   //private baseUrl = "https://8080-dbdedffdadadeeffdaabdfaccfeebafecbf.examlyiopb.examly.io";
   constructor(private httpClient:HttpClient) { }
 
