@@ -8,7 +8,8 @@ import { OrderList } from '../model/order-list';
   providedIn: 'root'
 })
 export class OrderService {
-  private baseUrl = "http://localhost:8080";
+  //private baseUrl = "http://localhost:8080";
+  private baseUrl = "https://medworld.herokuapp.com";
   //private baseUrl = "https://8080-dbdedffdadadeeffdaabdfaccfeebafecbf.examlyiopb.examly.io";
   constructor(private httpClient:HttpClient) { }
 
