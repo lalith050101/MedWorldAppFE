@@ -18,10 +18,9 @@ Payment Gateway.
    https://github.com/lalith050101/MedWorldAppBE  
    
 ## Technologies Used:
-  HTML
-  CSS
-  TypeScript
-  Bootstrap
-  Angular 
+  HTML  
+  CSS  
+  TypeScript  
+  Bootstrap  
+  Angular  
    
-
