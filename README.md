@@ -25,5 +25,5 @@ Payment Gateway.
   Angular  
    
 ## Other Contributors:
-  https://github.com/Dharaneeshwar
+  https://github.com/Dharaneeshwar  
   https://github.com/Ragav-Subramanian
