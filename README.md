@@ -1,7 +1,7 @@
 # MedWorldApplication
 MedWorld is an online web application that can cater to various customers who require purchasing medicine.
 
-## Functional features:
+## Functional Features:
 An application that customers can access and purchase medicine online.  
 The application have signup, login, profile, dashboard page, and product page.  
 This application have a provision to maintain a database for customer information, order information and product portfolio.  
