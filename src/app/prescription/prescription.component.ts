@@ -132,7 +132,7 @@ export class PrescriptionComponent implements OnInit {
   getImage() {
     //Make a call to Sprinf Boot to get the Image Bytes.
     this.httpClient
-      .get('https://medworld.herokuapp.com/' + localStorage.getItem('current_order'))
+      .get('https://medworld.herokuapp.com/prescription/' + localStorage.getItem('current_order'))
       .subscribe((res) => {
         this.retrieveResonse = res;
         this.base64Data = this.retrieveResonse.prescriptionImage;
