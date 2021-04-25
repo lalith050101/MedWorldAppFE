@@ -31,3 +31,12 @@
   animation-name: splash-image-animation;
   animation-duration: 1s;
 }
+
+.credentials {
+  margin: auto;
+  width:30%;
+  color: black;
+  box-shadow: 2px 3px #dd678b;
+  text-align: center;
+  margin-top: -5px;
+}
