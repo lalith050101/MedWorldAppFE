@@ -71,10 +71,7 @@ export class AcceptOrderComponent implements OnInit {
     //Make a call to Sprinf Boot to get the Image Bytes.
     this.httpClient
       .get('https://medworld.herokuapp.com/prescription/' + this.orderData.id)
-<<<<<<< HEAD
-=======
       //.get('http://localhost:8080/prescription/' + this.orderData.id)
->>>>>>> 71719069179e69b203b1effc886a4d4e5cd31d2b
       .subscribe((res) => {
         this.retrieveResonse = res;
         this.base64Data = this.retrieveResonse.prescriptionImage;
