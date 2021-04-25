@@ -26,18 +26,16 @@ export class AcceptOrderComponent implements OnInit {
   ngOnInit(): void {
     this.orderId = this.activatedRoute.snapshot.params['id'];
     this.getOrderDetails();
-    this.orderService.getParticularOrder(this.orderId).subscribe((data) => {
-      this.paymentId = data.orderId;
-      console.log("payment",this.paymentId);
-      this.getOrderItems();
-    });
   }
 
   getOrderDetails(){
     this.orderService.getOrder(this.orderId).subscribe((data) => {
       this.orderData = data;
+      this.paymentId = data.paymentId;
       console.log("orderdata.....",data);
       this.getImage();
+      this.getOrderItems();
+
     },error => console.log(error)
     )
     // this.orderData = {
@@ -72,7 +70,7 @@ export class AcceptOrderComponent implements OnInit {
   getImage() {
     //Make a call to Sprinf Boot to get the Image Bytes.
     this.httpClient
-      .get('http://localhost:8080/prescription/' + this.orderData.id)
+      .get('https://medworld.herokuapp.com/prescription/' + this.orderData.id)
       .subscribe((res) => {
         this.retrieveResonse = res;
         this.base64Data = this.retrieveResonse.prescriptionImage;

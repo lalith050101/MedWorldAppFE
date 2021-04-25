@@ -8,7 +8,7 @@ import { OrderList } from '../model/order-list';
   providedIn: 'root'
 })
 export class OrderService {
-  private baseUrl = "http://localhost:8080";
+  private baseUrl = "https://medworld.herokuapp.com";
   //private baseUrl = "https://8080-dbdedffdadadeeffdaabdfaccfeebafecbf.examlyiopb.examly.io";
   constructor(private httpClient:HttpClient) { }
 
@@ -54,11 +54,11 @@ export class OrderService {
     return this.httpClient.get<Order[]>(`${this.baseUrl}/orders/${orderId}`)
   }
 
-  getParticularOrder(id:string):Observable<Order>{
-    return this.httpClient.get<Order>(`${this.baseUrl}/admin/order/${id}`)
+  getParticularOrder(id:string):Observable<string>{
+    return this.httpClient.get<string>(`${this.baseUrl}/admin/order/${id}`)
   }
 
-  getUserParticularOrder(id:string):Observable<Order>{
-    return this.httpClient.get<Order>(`${this.baseUrl}/order/${id}`)
+  getUserParticularOrder(id:string):Observable<string>{
+    return this.httpClient.get<string>(`${this.baseUrl}/order/${id}`)
   }
 }

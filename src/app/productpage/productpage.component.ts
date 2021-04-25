@@ -36,16 +36,6 @@ export class ProductpageComponent implements OnInit {
       console.log(error);
       this.quantity = 1;
     })  
-    
-    this.product = {
-      productId: '1',
-      productName: 'Paracetamol',
-      description: 'A tablet to cure headache and fever',
-      price: '10',
-      quantity: '50',
-      imageUrl:
-        'https://tiimg.tistatic.com/fp/1/006/254/paracetamol-tablets-ip-803.jpg',
-    };
   }
 
   addToCart(id: string,source:string) {

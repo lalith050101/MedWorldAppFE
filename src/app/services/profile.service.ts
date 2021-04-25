@@ -7,7 +7,7 @@ import { UserDetails } from '../model/Profile';
   providedIn: 'root'
 })
 export class ProfileService {
-  private baseUrl = "http://localhost:8080";
+  private baseUrl = "https://medworld.herokuapp.com";
   //private baseUrl = "https://8080-dbdedffdadadeeffdaabdfaccfeebafecbf.examlyiopb.examly.io";
   constructor(private httpClient:HttpClient) { }
 

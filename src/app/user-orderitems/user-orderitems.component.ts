@@ -19,28 +19,14 @@ export class UserOrderitemsComponent implements OnInit {
   ngOnInit(): void {
     this.orderId = this.activatedRoute.snapshot.params['id'];
     this.getOrderDetails();
-    this.orderService.getUserParticularOrder(this.orderId).subscribe((data) => {
-      this.paymentId = data.orderId;
-      console.log("payment",this.paymentId);
-      this.getOrderItems();
-    });
   }
 
   getOrderDetails(){
     this.orderService.getUserOrder(this.orderId).subscribe((data) => {
-      console.log(data);
       this.orderData = data;
+      this.paymentId = data.paymentId;
+      this.getOrderItems();
     })
-    // this.orderData = {
-    //   'mobileNumber':'123456789',
-    //   'orderId':12345,
-    //   'paymentId':'12345',
-    //   'prescriptionImage':'https://tiimg.tistatic.com/fp/1/006/254/paracetamol-tablets-ip-803.jpg',
-    //   'status':0,
-    //   'totalPrice':100,
-    //   'userId':'0',
-    //   'username':'daranip'
-    // };
   }
 
   getOrderItems(){
