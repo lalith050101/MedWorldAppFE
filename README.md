@@ -9,10 +9,7 @@ Also, an integrated platform for admin and customer.
 Administration module include options for adding / modifying / removing the existing product(s) and customer management.  
 Prescription is validated by admin for a specific medicine.  
 Filters for products like Low to High or High to Low.  
-Payment Gateway.  
-
-## Demo:  
-  https://medworld.netlify.app/  
+Payment Gateway.   
     
 ## Backend Repo:
    https://github.com/lalith050101/MedWorldAppBE  
